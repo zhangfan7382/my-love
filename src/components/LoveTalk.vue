@@ -1,6 +1,6 @@
 <template>
     <div class="message-card">
-      <h1 class="title">💝 土味情话 💝</h1>
+      <h1 class="title">💝 帆爱萃宝 💝</h1>
       <div class="message-box" @touchstart="onTouchStart" @touchend="onTouchEnd">
         <p class="message-text">{{ currentMessage }}</p>
       </div>
@@ -19,7 +19,7 @@
   
   const currentMessage = ref('正在加载情话...')
   const isLoading = ref(false)
-  const buttonText = ref('点击获取帆帆想对你说的话')
+  const buttonText = ref('点击获取帆帆想对萃宝说的话')
   
   const API_URL = 'https://api.uomg.com/api/rand.qinghua?format=json'
   
@@ -61,7 +61,7 @@
       currentMessage.value = backupMessages[randomIndex]
     } finally {
       isLoading.value = false
-      buttonText.value = '点击获取帆帆想对你说的话'
+      buttonText.value = '点击获取帆帆想对萃宝说的话'
     }
   }
   
