@@ -57,8 +57,8 @@
     } catch (error) {
       console.error('获取情话失败:', error)
       // 使用本地备用情话
-      //const randomIndex = Math.floor(Math.random() * backupMessages.length)
-      //currentMessage.value = backupMessages[randomIndex]
+      const randomIndex = Math.floor(Math.random() * backupMessages.length)
+      currentMessage.value = backupMessages[randomIndex]
     } finally {
       isLoading.value = false
       buttonText.value = '点击获取帆帆想对萃宝说的话'
